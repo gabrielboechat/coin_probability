@@ -1,8 +1,3 @@
-#simulando 20 vezes o lançamento de 2000 moedas, convergindo a frequência relativa na probabilidade de 0.5
-#mudando as janelas do plot (setinha direita em "plots") é possível ver as 20 simulações
-
-
-
    # set seed
    set.seed(1)
    
@@ -17,7 +12,7 @@
    
 for (i in c(1:N)){
    
-   mypath = file.path("C:","Users","gabri","Desktop","Animações","Plots","slot 3",paste("imagem_",i,".jpeg",sep = ""))
+   mypath = file.path("C:","Users","gabri","Desktop","AnimaÃ§Ãµes","Plots","slot 3",paste("imagem_",i,".jpeg",sep = ""))
    
    jpeg(file = mypath)
    
@@ -26,7 +21,7 @@ for (i in c(1:N)){
         type = "l",
         col = "purple",
         lwd = 2, 
-        xlab = paste("nº of tossings: ",i), 
+        xlab = paste("nÂº of tossings: ",i), 
         ylab = "Ratio",
         main = "Converging Share of Heads in Repeated Coin Tossing")
    
